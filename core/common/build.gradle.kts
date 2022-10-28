@@ -9,8 +9,13 @@ android {
 
 dependencies {
 
-    implementation(AppDependencies.appLibraries)
+    implementation(Deps.appcompat)
+    implementation(Deps.coreKtx)
+    implementation(Deps.constraintLayout)
+    implementation(Deps.material)
     //test libs
-    testImplementation(AppDependencies.testLibraries)
-    androidTestImplementation(AppDependencies.androidTestLibraries)
+    testImplementation(Deps.junit)
+
+    androidTestImplementation(Deps.espressoCore)
+    androidTestImplementation(Deps.extJUnit)
 }
